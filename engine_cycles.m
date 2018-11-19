@@ -72,8 +72,42 @@ if strcmp(type,'turbofan')
     To4 = 1689;
     po4 = po3.*Pr_b;
     % Turbine
+<<<<<<< HEAD
     To5_1 = To4-(cp_c.*(To3-To1))./(cp_t.*(1+f-b));
     po5_1 = po4.*(1+(1./n_t).*(To5_1./To4-1)).^(gamma_t./(gamma_t-1));
 
 elseif strcmp(type,'turbojet')
+=======
+    n_t_p = 0.92;
+    % Turbine Mixer
+    % Fan Turbine
+    n_ft_p = 0.92;
+    % Afterburner
+    n_ab = 0.96;
+    % Core Nozzle
+    n_n = 0.95;
+    % Fan Nozzle
+    n_fn = 0.97;
+    % Combined Nozzle
+    n_cn = 0.95;
+    % Fuel Pump
+    n_p = 0.35;
+    
+    %% Outputs
+    
+    if strcmp(type,'turbofan')
+    
+        % T and p values
+        To1 = Ta.*(1+((gamma_d - 1)/2).*M^2);
+        if M < 1
+            
+        else
+            po1 = 
+        end
+        % Performance
+        
+    elseif strcmp(type,'turbojet')
+    end
+ %% This is Ayush testing things lol
+>>>>>>> Ayush
 end
