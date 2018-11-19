@@ -76,4 +76,5 @@ if strcmp(type,'turbofan')
     po5_1 = po4.*(1+(1./n_t).*(To5_1./To4-1)).^(gamma_t./(gamma_t-1));
 
 elseif strcmp(type,'turbojet')
+    
 end
